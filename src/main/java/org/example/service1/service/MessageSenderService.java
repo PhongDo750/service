@@ -56,6 +56,5 @@ public class MessageSenderService {
             System.out.println("JMS Message Sent successfuly:: " + message.getText());
         }
         session.commit();
-        connection.close();
     }
 }
