@@ -57,4 +57,9 @@ public class MessageSenderService {
         }
         session.commit();
     }
+
+    @Transactional
+    public String getMessage() throws JMSException {
+        return messageRepository.findAll().get(0).getMessage();
+    }
 }
